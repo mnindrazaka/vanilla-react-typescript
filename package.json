@@ -1,0 +1,32 @@
+{
+  "name": "vanilla-react-typescript",
+  "version": "1.0.0",
+  "description": "Vanilla React Typescript",
+  "main": "index.js",
+  "scripts": {
+    "build:ts": "tsc",
+    "build:webpack": "webpack",
+    "build": "npm run build:ts && npm run build:webpack",
+    "start": "npm run build && node dist/server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnindrazaka/vanilla-react-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mnindrazaka/vanilla-react-typescript/issues"
+  },
+  "homepage": "https://github.com/mnindrazaka/vanilla-react-typescript#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.15",
+    "typescript": "^4.9.4",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
