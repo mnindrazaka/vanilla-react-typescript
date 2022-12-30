@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
+    "outDir": "./dist-js",
     "allowJs": true,
     "target": "es5",
     "esModuleInterop": true

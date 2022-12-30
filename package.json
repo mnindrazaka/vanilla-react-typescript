@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build:ts": "tsc",
-    "build:webpack": "webpack",
-    "build": "npm run build:ts && npm run build:webpack",
-    "start": "npm run build && node dist/server/index.js"
+    "build:webpack:client": "webpack --config webpack.config.client.js",
+    "build:webpack:server": "webpack --config webpack.config.server.js",
+    "build": "npm run build:ts && npm run build:webpack:client && npm run build:webpack:server",
+    "start": "npm run build && node dist/server.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.15",
+    "html-webpack-plugin": "^5.5.0",
     "typescript": "^4.9.4",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
